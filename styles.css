@@ -65,7 +65,7 @@ body::before {
 }
 
 .button:active {
-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 /* .teaser {
@@ -113,7 +113,7 @@ transform: scale(0.8);
 
 .card > img {
   max-width: 30vw;
-  min-width: 200px;
+  min-width: 250px;
   object-fit: contain;
   border: 2px solid black;
   box-shadow: 0 0 10px 4px orange;
