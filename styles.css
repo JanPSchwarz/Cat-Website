@@ -81,7 +81,8 @@ body::before {
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 60vw;
+  width: 40vw;
+  min-width: 300px;
   padding: 10px;
   background-color: lightskyblue;
   border-radius: 5px;
@@ -103,10 +104,11 @@ body::before {
 .cat-description > li > span {
   display: block;
   font-size: 1rem;
+  margin-top: 5px;
 }
 
 .card > img {
-  max-width: 40vw;
+  max-width: 30vw;
   min-width: 200px;
   object-fit: contain;
   border: 2px solid black;
