@@ -94,6 +94,7 @@ body::before {
   border: 2px solid black;
   line-height: 1.5;
   margin: 30px auto 50px;
+  cursor: pointer;
 }
 
 .cat-description > li {
@@ -117,13 +118,14 @@ body::before {
   object-fit: contain;
   border: 2px solid black;
   box-shadow: 0 0 10px 4px orange;
+  cursor: pointer;
 }
 
 .divider {
   height: 2px;
   width: 80vw;
   background-color: black;
-  margin-bottom: 70px;
+  margin: 35px 0 70px;
 }
 
 .note {
