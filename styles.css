@@ -117,13 +117,30 @@ body::before {
   margin-top: 5px;
 }
 
-.card > img {
+.card > div > img {
   max-width: 30vw;
   min-width: 250px;
   object-fit: contain;
   border: 2px solid black;
   box-shadow: 0 0 10px 4px orange;
   cursor: pointer;
+}
+
+.image-box {
+  position: relative;
+}
+
+.start-box > .card:first-child > .image-box > .fa-solid {
+  font-size: 2rem;
+  color: red;
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
+  display: block;
+}
+
+.fa-solid {
+  font-size: 0;
 }
 
 .divider {

@@ -4,10 +4,16 @@ export default function Card(cat) {
   const card = document.createElement("div");
   card.classList.add("card");
 
+  const imageBox = document.createElement("div");
+  imageBox.classList.add("image-box");
+
   const img = document.createElement("img");
   img.setAttribute("src", `${cat.url}`);
   img.setAttribute("alt", "random-cat-image");
   img.setAttribute("id", "cat-image");
+
+  const arrowIcon = document.createElement("i");
+  arrowIcon.classList.add("fa-solid", "fa-arrow-down");
 
   // Create List: Item for Item and Content
 
@@ -68,21 +74,28 @@ export default function Card(cat) {
     listItemFive
   );
 
-  card.append(img, list, divider);
+  imageBox.append(img);
+  imageBox.append(arrowIcon);
+
+  card.append(imageBox, list, divider);
 
   img.addEventListener("click", () => {
     if (list.style.display === "none") {
       list.style.display = "block";
+      arrowIcon.classList.toggle("fa-arrow-up");
     } else {
       list.style.display = "none";
+      arrowIcon.classList.toggle("fa-arrow-up");
     }
   });
 
   list.addEventListener("click", () => {
     if (list.style.display === "none") {
       list.style.display = "block";
+      arrowIcon.classList.toggle("fa-arrow-up");
     } else {
       list.style.display = "none";
+      arrowIcon.classList.toggle("fa-arrow-up");
     }
   });
 
@@ -96,6 +109,7 @@ export default function Card(cat) {
 //         <img
 //           src="https://cdn2.thecatapi.com/images/klJJYDl2B.jpg"
 //           alt="random-cat-image" />
+//            <i class="fa-solid fa-arrow-down"></i>
 //         <ul class="cat-description">
 //           <li>Breed-Name: <span>Example</span></li>
 //           <li>Origin: <span>Example</span></li>
