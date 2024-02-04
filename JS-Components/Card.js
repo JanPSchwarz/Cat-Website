@@ -88,3 +88,20 @@ export default function Card(cat) {
 
   return card;
 }
+
+// <!-- Template of Card-Design -->
+
+// <!-- <p class="teaser">"Miau" the Button and see 😋</p> -->
+// <!-- <div class="card">
+//         <img
+//           src="https://cdn2.thecatapi.com/images/klJJYDl2B.jpg"
+//           alt="random-cat-image" />
+//         <ul class="cat-description">
+//           <li>Breed-Name: <span>Example</span></li>
+//           <li>Origin: <span>Example</span></li>
+//           <li>Temperament: <span>Example</span></li>
+//           <li>Description: <span>Example</span></li>
+//           <li><span><a href="">Wikipedia-Article</a></span></li>
+//         </ul>
+//         <div class="divider"></div>
+//       </div> -->

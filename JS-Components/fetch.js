@@ -1,15 +1,14 @@
 /////// Seperat Function für Fetch funktioniert (noch) nicht
 
-// async function fetchCats() {
-//   const url =
-//     "https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1&api_key=live_80QHtDPhcDJgMWfVMivtOm4RkbsEB7Op11NNA8NkImpLpcuUvYoyb12eDy5cLmnb";
+let page = 0;
 
-//   const response = await fetch(url);
-//   const data = await response.json();
+export default async function fetchCats() {
+  const url = `https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1&page=${page}&api_key=live_80QHtDPhcDJgMWfVMivtOm4RkbsEB7Op11NNA8NkImpLpcuUvYoyb12eDy5cLmnb`;
 
-//   // const catData = data[0].breeds;
+  const response = await fetch(url);
+  const data = await response.json();
 
-//   console.log(data);
+  console.log(data);
 
-//   return data;
-// }
+  return data;
+}
